@@ -8,17 +8,17 @@ ActiveMQ를 통해서 메세지 송수신이 가능합니다.
 
 ### 실행 사진
 
-![Alt text](https://github.com/doorBW/uos_software/blob/master/sw1.JPG?raw=true)
+![Alt text](https://github.com/doorBW/AEATsoftware/blob/master/sw1.JPG?raw=true)
 
 #### 첫번째화면: AEAT편집기에서 필요한 내용을 작성하고 xml파일로 저장하거나, xml파일을 불러올 수 있습니다.
 <br/> 
 
-![Alt text](https://github.com/doorBW/uos_software/blob/master/sw2.JPG?raw=true)
+![Alt text](https://github.com/doorBW/AEATsoftware/blob/master/sw2.JPG?raw=true)
 
 #### 두번째화면: ActiveMQ를 이용한 메세지 송수신을 할 수 있습니다. 또한 송수신창에 있는 xml형식의 문자열을 AEAT편집기로 전달할 수 있습니다.
 <br/> 
 
-![Alt text](https://github.com/doorBW/uos_software/blob/master/sw3.JPG?raw=true)
+![Alt text](https://github.com/doorBW/AEATsoftware/blob/master/sw3.JPG?raw=true)
 #### 세번째화면: Destination 또는 Broker를 설정할 수 있습니다.<br/>간단한 프로그램 소개와 블로그, github안내가 있습니다.
 
 
