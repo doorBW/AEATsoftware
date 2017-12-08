@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/D:/work/AEAT_Publisher/src/kr/ac/uos/_2017software_system_project/aeat/AEAT-1.0-20170920.xsd" uri="xml-resources/jaxb/AEAT/AEAT-1.0-20170920.xsd"/>
+    <system systemId="file:/D:/work/AEAT_Publisher/xmlSchema/AEAT-1.0-20170920.xsd" uri="xml-resources/jaxb/AEAT/AEAT-1.0-20170920.xsd"/>
+    <system systemId="https://www.w3.org/2001/xml.xsd" uri="xml-resources/jaxb/AEAT/www.w3.org/2001/xml.xsd"/>
+</catalog>

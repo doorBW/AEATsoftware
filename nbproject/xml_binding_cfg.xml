@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<schemas xmlns='http://xml.netbeans.org/schema/JAXBWizConfig' destdir='build/generated-sources/jaxb' projectName='AEAT_Publisher' version='1.0'>
+	<schema type='-xmlschema' package='aeat' name='AEAT'>
+		<xjc-options>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='xml-resources/jaxb/AEAT/AEAT-1.0-20170920.xsd' origLocation='xmlSchema/AEAT-1.0-20170920.xsd'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
+</schemas>

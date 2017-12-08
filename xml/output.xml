@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AEAT xmlns="tag:atsc.org,2016:XMLSchemas/ATSC3/Delivery/AEAT/1.0/">
+    <AEA aeaId="3" issuer="KUSR" audience="public" aeaType="update">
+        <Header effective="2016-09-11T13:00:00.000+09:00">
+            <EventCode>EVI</EventCode>
+        </Header>
+    </AEA>
+</AEAT>
