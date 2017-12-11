@@ -14,6 +14,7 @@ import javax.jms.JMSException;
 import javax.jms.MessageProducer;
 import javax.jms.Session;
 import javax.jms.TextMessage;
+import kr.ac.uos.software_project.aeat.view.Frame;
 import kr.ac.uos.software_project.aeat.view.MessagePanel;
 import org.apache.activemq.ActiveMQConnectionFactory;
 
@@ -25,7 +26,7 @@ public class ActiveMQProducer {
 
     private Connection connection;
     private MessagePanel messagePanel;
-    
+    private Frame frame;
     public ActiveMQProducer(String address,MessagePanel messagePanel) {
         init(address, messagePanel);     
         
@@ -45,8 +46,8 @@ public class ActiveMQProducer {
             connection.start();
             
         } catch (JMSException ex) {
+            frame.setStatus("연결 오류가 발생하였습니다. 자세한 사항은 console창을 확인해주세요.");
             System.out.print("연결오류가 발생하였습니다.");
-            messagePanel.setTextArea("연결오류가 발생하였습니다.");
             Logger.getLogger(ActiveMQProducer.class.getName()).log(Level.SEVERE, null, ex);
         }
     }

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2018 sp1 (http://www.altova.com) by Beomwoo Moon (University Of Seoul) -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:aeat="tag:atsc.org,2016:XMLSchemas/ATSC3/Delivery/AEAT/1.0/" targetNamespace="tag:atsc.org,2016:XMLSchemas/ATSC3/Delivery/AEAT/1.0/" elementFormDefault="qualified">
 	<!-- schemaLocation: not "W3C/xml.xsd", correct "https://www.w3.org/2001/xml.xsd" -->
-    <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="https://www.w3.org/2001/xml.xsd" />
+	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="https://www.w3.org/2001/xml.xsd"/>
 	<xs:element name="AEAT" type="aeat:AEATType"/>
 	<xs:complexType name="AEATType">
 		<xs:sequence>
@@ -49,7 +50,7 @@
 	<xs:complexType name="langType">
 		<xs:simpleContent>
 			<xs:extension base="xs:string">
-				<xs:attribute ref="xml:lang" use="required"/>
+				<xs:attribute name="lang" use="required"/>
 				<xs:anyAttribute processContents="strict"/>
 			</xs:extension>
 		</xs:simpleContent>
@@ -115,7 +116,7 @@
 		<xs:sequence>
 			<xs:any namespace="##other" processContents="strict" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
-		<xs:attribute ref="xml:lang"/>
+		<xs:attribute name="lang"/>
 		<xs:attribute name="mediaDesc" type="xs:string"/>
 		<xs:attribute name="mediaType" type="aeat:mediaTypeType"/>
 		<xs:attribute name="url" type="xs:anyURI" use="required"/>

@@ -3,14 +3,19 @@
     <AEA aeaId="3" issuer="KUSR" audience="public" aeaType="update" refAEAId="3" priority="3" wakeup="true">
         <Header effective="2016-09-11T13:00:00.000+09:00" expires="2016-09-11T16:00:00.000+09:00">
             <EventCode type="SAME">EVI</EventCode>
-            <EventDesc xml:lang="en">Tornado Warning</EventDesc>
+            <EventDesc xml:lang="no">뭐하냐구!</EventDesc>
+            <EventDesc xml:lang="ko">나랑놀아줘</EventDesc>
+            <EventDesc xml:lang="no">3333333</EventDesc>
+            <EventDesc xml:lang="de">444444444</EventDesc>
             <Location type="FIPS">000000</Location>
+            <Location type="FIPS">222222222222222222222</Location>
+            <Location type="polygon">3333333</Location>
+            <Location type="circle">4444444444</Location>
         </Header>
-        <AEAText xml:lang="en">Put your helmet on</AEAText>
-        <AEAText xml:lang="ko">2222222</AEAText>
-        <AEAText xml:lang="no"> </AEAText>
-        <AEAText xml:lang="de"> </AEAText>
-        <AEAText xml:lang="">555555555555</AEAText>
+        <AEAText xml:lang="ko">돼지정진이 ㅠ</AEAText>
+        <AEAText xml:lang="">뭐해!!!!!!</AEAText>
+        <AEAText xml:lang="ko">333333</AEAText>
+        <AEAText xml:lang="zh">444444444</AEAText>
         <LiveMedia bsid="47" serviceId="3">
             <ServiceName xml:lang="en">KUSR</ServiceName>
         </LiveMedia>

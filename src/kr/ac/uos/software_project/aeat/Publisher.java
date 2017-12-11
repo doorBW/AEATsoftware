@@ -136,6 +136,7 @@ public class Publisher {
     public void onClickedGoToAeat1(){
         frame.loadAeat(this.goToAeatFromSender());
         frame.clearMessagePanel();
+        frame.setStatus("입력창의 내용이 AEAT편집기로 전달 되었습니다.");
     }
     
     //메소드명: onClickedGoToAeat2
@@ -145,6 +146,7 @@ public class Publisher {
     public void onClickedGoToAeat2(){
         frame.loadAeat(this.goToAeatFromReceiver());
         frame.clearReceivePanel();
+        frame.setStatus("수신창의 내용이 AEAT편집기로 전달 되었습니다.");
     }
     
     //메소드명: onClickedLoadButton
@@ -154,9 +156,11 @@ public class Publisher {
     public void onClickedLoadButton() {
         //String path = AEAT_SAMPLE;
         String path = "xml/";
-        path = path+(frame.getTitleToLoad());
+        String title = frame.getTitleToLoad();
+        path = path+(title);
         frame.loadAeat(this.aeatUnmarshalling(path));
         System.out.println("Load xml from: " + path);
+        frame.setStatus(title+" 파일을 Unmarshalling하여 AEAT편집기에 불러왔습니다.");
     }
 
     //메소드명: onClickedSaveButton
@@ -166,9 +170,11 @@ public class Publisher {
     public void onClickedSaveButton() {
         //String path = AEAT_OUTPUT;
         String path = "xml/";
-        path = path+(frame.getTitleToSave());
+        String title = frame.getTitleToSave();
+        path = path+(title);
         this.aeatMarshalling(frame.getAeat(), path);
         System.out.println("Save xml to: " + path);
+        frame.setStatus("현재 AEAT편집기의 내용을 "+title+" 파일로 저장합니다.");
         frame.refresh();
     }
     
@@ -178,6 +184,7 @@ public class Publisher {
     //부수효과: Aeat편집기의 내용을 비움
     public void onClickedxmlClearButton(){
         frame.clear();
+        frame.setStatus("AEAT편집기의 모든 내용을 초기화 하였습니다.");
     }
 
     //메소드명: onClickedClearButton
@@ -186,6 +193,7 @@ public class Publisher {
     //부수효과: 입력창에 있는 내용을 비움
     public void onClickedClearButton() {
         frame.clearMessagePanel();
+        frame.setStatus("메세지 입력창의 내용을 비웠습니다.");
     }
     
     //메소드명: onClickedClearReceiverButton
@@ -194,6 +202,7 @@ public class Publisher {
     //부수효과: 수신창에 있는 내용을 비움
     public void onClickedClearReceiverButton() {
         frame.clearReceivePanel();
+        frame.setStatus("메세지 받기창의 내용을 비웠습니다.");
     }
     
     //메소드명: onClickedSendButton
@@ -201,6 +210,7 @@ public class Publisher {
     //출력: 없음
     //부수효과: 입력창에 있는 내용을 activeMQ를 통해 송신함
     public void onClickedSendButton(){
+        frame.setStatus("1:1 방식으로 메세지를 성공적으로 송신하였습니다.");
         frame.sendMessagePanel(); 
     }
     
@@ -209,22 +219,25 @@ public class Publisher {
     //출력: 없음
     //부수효과: activeMQ를 통해 메세지를 수신함
     public void onClickedReceiveButton(){
+        frame.setStatus("1:1 방식으로 메세지를 수신합니다.");
         frame.receiveMessagePanel();
     }
 
-    //메소드명: onClickedSendButton
+    //메소드명: onClickedMultiSendButton
     //입력: 없음
     //출력: 없음
     //부수효과: 입력창에 있는 내용을 activeMQ를 통해 송신함
     public void onClickedMultiSendButton(){
+        frame.setStatus("1:다 방식으로 메세지를 성공적으로 송신하였습니다.");
         frame.sendMultiMessagePanel(); 
     }
     
-    //메소드명: onClickedReceiveButton
+    //메소드명: onClickedMultiReceiveButton
     //입력: 없음
     //출력: 없음
     //부수효과: activeMQ를 통해 메세지를 수신함
     public void onClickedMultiReceiveButton(){
+        frame.setStatus("1:다 방식으로 메세지를 수신합니다.");
         frame.receiveMultiMessagePanel();
     }
     
@@ -233,8 +246,8 @@ public class Publisher {
     //출력: 없음
     //부수효과: Destination을 설정하기 위한 버튼
     public void onClickedConfigDestination(){
-        
         frame.configDestination();
+        frame.setStatus("나의 Destination이 정상적으로 설정되었습니다.");
     }
     
     //메소드명: onClickedConfigBroker
@@ -243,6 +256,7 @@ public class Publisher {
     //부수효과: Broker를 설정하기 위한 버튼
     public void onClickedConfigBroker(){
         frame.configBroker();
+        frame.setStatus("나의 Broker가 정상적으로 설정되었습니다.");
     }
     
     //메소드명: onClickedConfigDestinationForChat
@@ -250,8 +264,8 @@ public class Publisher {
     //출력: 없음
     //부수효과: Destination을 설정하기 위한 버튼
     public void onClickedConfigDestinationOther(){
-        
         frame.configDestinationOther();
+        frame.setStatus("상대방의 Destination이 정상적으로 설정되었습니다.");
     }
     
     //메소드명: onClickedConfigBroker
@@ -260,6 +274,7 @@ public class Publisher {
     //부수효과: Broker를 설정하기 위한 버튼
     public void onClickedConfigBrokerOther(){
         frame.configBrokerOther();
+        frame.setStatus("상대방의 Broker가 정상적으로 설정되었습니다.");
     }
 
 }

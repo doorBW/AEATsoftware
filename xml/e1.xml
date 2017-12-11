@@ -6,11 +6,9 @@
             <EventDesc xml:lang="en">Tornado Warning</EventDesc>
             <Location type="FIPS">000000</Location>
         </Header>
-        <AEAText xml:lang="en">Put your helmet on</AEAText>
-        <AEAText xml:lang="ko">2222222</AEAText>
-        <AEAText xml:lang="no"> </AEAText>
-        <AEAText xml:lang="de"> </AEAText>
-        <AEAText xml:lang="">555555555555</AEAText>
+        <AEAText xml:lang="ko">111111111</AEAText>
+        <AEAText xml:lang="">asdasdasdasd</AEAText>
+        <AEAText xml:lang="ko">asdasd</AEAText>
         <LiveMedia bsid="47" serviceId="3">
             <ServiceName xml:lang="en">KUSR</ServiceName>
         </LiveMedia>
